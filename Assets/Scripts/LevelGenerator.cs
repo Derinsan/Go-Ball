@@ -6,7 +6,7 @@ public class LevelGenerator : MonoBehaviour
     [SerializeField] private GameObject[] _roadPrefab;
     private List<GameObject> _activeTiles = new List<GameObject>();
     private float _spawnPos = 10;
-    private float _tileLength = 8; // 5
+    private float _tileLength = 15; // 5
 
     [SerializeField] private Transform _player;
     private int _startTiles = 12;

@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody _rigidbody;
     [SerializeField] private float Velocity = 6f;
     [SerializeField] private float _turnSpeed = 5f;
+
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody>();
