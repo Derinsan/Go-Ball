@@ -14,6 +14,11 @@ public class ManagerGame : MonoBehaviour
         Score._playerScore += 1;
     }
 
+    public void ExitGameScene()
+    {
+        SceneManager.LoadScene(1);
+    }
+
     private void SwitchPauseStatus(bool status)
     {
         Time.timeScale = status ? 1 : 0;
@@ -27,5 +32,15 @@ public class ManagerGame : MonoBehaviour
         {
             SwitchPauseStatus(_isPause);
         }
+    }
+
+    public void PauseButton()
+    {
+        SwitchPauseStatus(_isPause);
+    }
+
+    public void ContinueButton()
+    {
+        SwitchPauseStatus(_isPause);
     }
 }
