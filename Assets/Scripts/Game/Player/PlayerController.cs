@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -12,6 +11,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody>();
+        StartCoroutine(SpeedUp());
     }
 
     void FixedUpdate()
@@ -25,6 +25,27 @@ public class PlayerController : MonoBehaviour
         {
             Destroy(gameObject);
             isPlayerDead = true;
+        }
+    }
+
+    private void OnCollisionStay(Collision other)
+    {
+        if (other.gameObject.tag == "Climb")
+        {
+            Velocity = 6;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "SpeedUpMoment")
+        {
+            Velocity = 9f;
+        }
+
+        if (other.gameObject.tag == "SpeedDownMoment")
+        {
+            Velocity = 8f;
         }
     }
 
@@ -45,6 +66,10 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator SpeedUp()
     {
-
+        while (Velocity <= 8.50)
+        {
+            yield return new WaitForSeconds(8f);
+            Velocity += 0.25f;
+        }
     }
 }

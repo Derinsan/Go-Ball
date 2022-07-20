@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - obstacles
+  - Wall
+  - Slide
+  - SpeedUpMoment
+  - SpeedDownMoment
+  - Climb
   layers:
   - Default
   - TransparentFX
