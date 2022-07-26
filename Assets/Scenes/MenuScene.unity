@@ -1355,8 +1355,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1818029711}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
-        m_MethodName: SetVolume
-        m_Mode: 0
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1403,13 +1403,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 603517951}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0.3879989, y: 0.8127002, z: -0.07653554, w: 0.4279225}
+  m_LocalPosition: {x: 9.114055, y: -8.897825, z: 4.2163167}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 1171353949}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &607858307
 PrefabInstance:
@@ -2537,7 +2537,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: -2.9121952}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -2553,7 +2553,8 @@ Transform:
   m_LocalPosition: {x: -0.48, y: 13.19, z: -2.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 603517953}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3929,7 +3930,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1818029711
 MonoBehaviour:
@@ -3943,7 +3944,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 639166cc9e00f7b4c8098dcb2049e634, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _audioSource: {fileID: 1818029709}
+  _audioSource: {fileID: 0}
 --- !u!1001 &1826556510
 PrefabInstance:
   m_ObjectHideFlags: 0

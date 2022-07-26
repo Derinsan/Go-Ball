@@ -569,14 +569,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.9214484, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300024, guid: 1eaee135ce037439d925cee5e41ce026, type: 3}
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -674,8 +674,27 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -0.0041454
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8792196255769069731, guid: 5e817fb9f066550439c850b48a6d2cc2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5e817fb9f066550439c850b48a6d2cc2, type: 3}
+--- !u!1 &802664202 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 120508, guid: 5e817fb9f066550439c850b48a6d2cc2, type: 3}
+  m_PrefabInstance: {fileID: 802664201}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &802664203
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 802664202}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 70.72753, y: 83.56738, z: 63.568085}
+  m_Center: {x: 0, y: 0, z: -0.0000076293945}
 --- !u!1001 &967094451
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1217,7 +1236,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1766954952}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.285, y: 0.316273, z: 3.265}
+  m_LocalPosition: {x: 0.285, y: 0.327, z: 3.265}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 0
   m_Children: []

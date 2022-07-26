@@ -11,12 +11,13 @@ public class ManagerGame : MonoBehaviour
         SceneManager.LoadScene(0);
         Time.timeScale = 1;
         Score._playerScore = 0;
-        Score._playerScore += 1;
     }
 
     public void ExitGameScene()
     {
+        Score._playerScore = 0;
         SceneManager.LoadScene(1);
+        Time.timeScale = 1;
     }
 
     private void SwitchPauseStatus(bool status)

@@ -4,7 +4,7 @@ public class CameraMove : MonoBehaviour
 {
     public GameObject mainCamera;
     bool moveRight = true;
-    float speed = 1f; //unit per second
+    float speed = 1f;
 
     void Update()
     {
