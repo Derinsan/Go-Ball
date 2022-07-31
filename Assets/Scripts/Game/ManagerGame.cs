@@ -5,6 +5,26 @@ public class ManagerGame : MonoBehaviour
 {
     private bool _isPause = false;
     [SerializeField] private GameObject _panelPause;
+    public Transform player;
+
+    private void Awake()
+    {
+        for (int i = 0; i < player.childCount; i++)
+        {
+            player.GetChild(i).gameObject.SetActive(false);
+        }
+        player.GetChild(PlayerPrefs.GetInt("chosenSkin")).gameObject.SetActive(true);
+    }
+
+    //[SerializeField] public GameObject _panelGameOver;
+
+    /*private void FixedUpdate()
+    {
+        if (PlayerController.isPlayerDead == true)
+        {
+            _panelGameOver.SetActive(true);
+        }
+    }*/
 
     public void Restart()
     {
@@ -27,14 +47,6 @@ public class ManagerGame : MonoBehaviour
         _panelPause.SetActive(!status);
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            SwitchPauseStatus(_isPause);
-        }
-    }
-
     public void PauseButton()
     {
         SwitchPauseStatus(_isPause);
@@ -43,5 +55,15 @@ public class ManagerGame : MonoBehaviour
     public void ContinueButton()
     {
         SwitchPauseStatus(_isPause);
+    }
+
+    public void ContinueGameNo()
+    {
+        SceneManager.LoadScene(1);
+    }
+
+    public void ContinueGameYes()
+    {
+
     }
 }

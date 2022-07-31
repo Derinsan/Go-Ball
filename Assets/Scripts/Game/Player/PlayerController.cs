@@ -4,10 +4,11 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public static bool isPlayerDead = false;
-    private Rigidbody _rigidbody;
+    Rigidbody _rigidbody;
     [SerializeField] private float Velocity = 6f;
     [SerializeField] private float _turnSpeed = 5f;
-    [SerializeField] private float _moveHorizontal;
+    float _moveHorizontal;
+
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody>();

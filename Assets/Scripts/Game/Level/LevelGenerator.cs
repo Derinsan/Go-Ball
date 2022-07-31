@@ -19,9 +19,9 @@ public class LevelGenerator : MonoBehaviour
         }
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        if (_player.position.z - 10 > _spawnPos - (_startTiles * _tileLength))
+        if (_player.position.z - 20 > _spawnPos - (_startTiles * _tileLength))
         {
             SpawnLevel(Random.Range(0, _roadPrefab.Length));
             DeleteTile();

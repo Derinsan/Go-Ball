@@ -32,4 +32,9 @@ public class MenuSceneButton : MonoBehaviour
     {
         _settings.SetActive(false);
     }
+
+    public void ShopButton()
+    {
+        SceneManager.LoadScene("ShopScene");
+    }
 }

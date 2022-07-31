@@ -6,7 +6,7 @@ public class CameraMove : MonoBehaviour
     bool moveRight = true;
     float speed = 1f;
 
-    void Update()
+    void FixedUpdate()
     {
         if (moveRight)
         {
