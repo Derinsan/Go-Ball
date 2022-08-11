@@ -1,27 +1,12 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Coins : MonoBehaviour
 {
-    public int coinsCount { get; private set; } = 0;
-    public static Coins Instance { get; private set; } = null;
-
-    private void Awake()
+    [SerializeField] private Text _coinsText;
+    private void Start()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(Instance);
-        }
-        else Destroy(gameObject);
-    }
-
-    public void AddCoins(int count)
-    {
-        coinsCount += count;
-    }
-
-    public void AddCoins()
-    {
-        coinsCount++;
+        int coins = PlayerPrefs.GetInt("coins");
+        _coinsText.text = coins.ToString();
     }
 }

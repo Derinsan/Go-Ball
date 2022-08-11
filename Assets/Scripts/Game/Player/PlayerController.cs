@@ -7,12 +7,15 @@ public class PlayerController : MonoBehaviour
     Rigidbody _rigidbody;
     [SerializeField] private float Velocity = 6f;
     [SerializeField] private float _turnSpeed = 5f;
+    private float speed;
     float _moveHorizontal;
+    [SerializeField] private Score _scoreScript;
 
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody>();
         StartCoroutine(SpeedUp());
+        isPlayerDead = false;
     }
 
     void FixedUpdate()
@@ -26,27 +29,8 @@ public class PlayerController : MonoBehaviour
         {
             Destroy(gameObject);
             isPlayerDead = true;
-        }
-    }
-
-    private void OnCollisionStay(Collision other)
-    {
-        if (other.gameObject.tag == "Climb")
-        {
-            Velocity = 6;
-        }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "SpeedUpMoment")
-        {
-            Velocity = 9f;
-        }
-
-        if (other.gameObject.tag == "SpeedDownMoment")
-        {
-            Velocity = 8f;
+            int lastRunScore = int.Parse(_scoreScript._txt.text.ToString());
+            PlayerPrefs.SetInt("lastRunScore", lastRunScore);
         }
     }
 
@@ -67,7 +51,7 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator SpeedUp()
     {
-        while (Velocity <= 8.50)
+        while (Velocity <= 9.25f)
         {
             yield return new WaitForSeconds(8f);
             Velocity += 0.25f;

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -23,7 +21,7 @@ public class SkinChanger : MonoBehaviour
         index = PlayerPrefs.GetInt("chosenSkin");
         coinsText.text = coins.ToString();
 
-        StockCheck = new bool[53];
+        StockCheck = new bool[10];
         if (PlayerPrefs.HasKey("StockArray"))
             StockCheck = PlayerPrefsX.GetBoolArray("StockArray");
 

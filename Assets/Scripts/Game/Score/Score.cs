@@ -5,7 +5,12 @@ using UnityEngine.UI;
 public class Score : MonoBehaviour
 {
     public static float _playerScore;
-    [SerializeField] private Text _txt;
+    public Text _txt;
+
+    private void Awake()
+    {
+        _playerScore = 0f;
+    }
 
     private void Start()
     {

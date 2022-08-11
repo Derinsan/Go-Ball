@@ -6,6 +6,6 @@ public class RotatePlayerSkin : MonoBehaviour
 
     private void FixedUpdate()
     {
-        _playerSkin.transform.Rotate(new Vector3(-90f, 0, 60f) * Time.deltaTime);
+        _playerSkin.transform.Rotate(new Vector3(110f, 0, 0f) * Time.deltaTime);
     }
 }

@@ -21,11 +21,19 @@ public class LevelGenerator : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (_player.position.z - 20 > _spawnPos - (_startTiles * _tileLength))
+        if (_player != null)
+        {
+            if (_player.position.z - 20 > _spawnPos - (_startTiles * _tileLength))
+            {
+                SpawnLevel(Random.Range(0, _roadPrefab.Length));
+                DeleteTile();
+            }
+        }
+        /*if (_player.position.z - 20 > _spawnPos - (_startTiles * _tileLength))
         {
             SpawnLevel(Random.Range(0, _roadPrefab.Length));
             DeleteTile();
-        }
+        }*/
     }
 
     private void SpawnLevel(int tileindex)

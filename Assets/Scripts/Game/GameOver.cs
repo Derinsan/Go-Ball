@@ -1,32 +1,46 @@
-using System.Collections;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameOver : MonoBehaviour
 {
     [SerializeField] private GameObject _panelGameOver;
-    private int _number = 5;
+    [SerializeField] private GameObject _pauseButton;
+    [SerializeField] private GameObject _leftMoveButton;
+    [SerializeField] private GameObject _rightMoveButton;
+    [SerializeField] Text recordText;
 
-    private void Update()
+    private void Start()
+    {
+        int lastRunScore = PlayerPrefs.GetInt("lastRunScore");
+        int recordScore = PlayerPrefs.GetInt("recordScore");
+
+        if (lastRunScore > recordScore)
+        {
+            recordScore = lastRunScore;
+            PlayerPrefs.SetInt("recordScore", recordScore);
+            recordText.text = recordScore.ToString();
+        }
+        else
+        {
+            recordText.text = recordScore.ToString();
+        }
+    }
+
+    private void FixedUpdate()
     {
         if (PlayerController.isPlayerDead == true)
         {
             _panelGameOver.SetActive(true);
+            _pauseButton.SetActive(false);
+            _leftMoveButton.SetActive(false);
+            _rightMoveButton.SetActive(false);
+        }
+        else if (PlayerController.isPlayerDead == false)
+        {
+            _panelGameOver.SetActive(false);
+            _pauseButton.SetActive(true);
+            _leftMoveButton.SetActive(true);
+            _rightMoveButton.SetActive(true);
         }
     }
-
-    /*IEnumerator ExitGameFive()
-    {
-        while (_number > 0)
-        {
-            yield return new WaitForSeconds(1f);
-            _text.text = $"{_number}";
-            _number--;
-            if (_number == 0)
-            {
-                SceneManager.LoadScene(1);
-            }
-        }
-    }*/
 }

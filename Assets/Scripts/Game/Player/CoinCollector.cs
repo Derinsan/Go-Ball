@@ -1,13 +1,23 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CoinCollector : MonoBehaviour
 {
-    public void OnTriggerEnter(Collider other)
+    [SerializeField] private int coins;
+    [SerializeField] private Text coinsText;
+    private void Start()
     {
-        if (other.gameObject.CompareTag("Coin"))
+        coins = PlayerPrefs.GetInt("coins");
+        coinsText.text = coins.ToString();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Coin")
         {
-            Coins.Instance.AddCoins();
-            Debug.Log("Количество монет = " + Coins.Instance.coinsCount);
+            coins++;
+            PlayerPrefs.SetInt("coins", coins);
+            coinsText.text = coins.ToString();
             Destroy(other.gameObject);
         }
     }

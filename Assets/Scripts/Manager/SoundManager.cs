@@ -1,9 +1,11 @@
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class SoundManager : MonoBehaviour
 {
     [SerializeField] private AudioSource _audioSource;
     private float musicVolume = 1f;
+    public AudioMixer audioMixer;
 
     private void Start()
     {
@@ -18,5 +20,10 @@ public class SoundManager : MonoBehaviour
     public void SetVolume(float vol)
     {
         musicVolume = vol;
+    }
+
+    public void SaveSettings()
+    {
+        audioMixer.SetFloat("MasterVolume", musicVolume);
     }
 }

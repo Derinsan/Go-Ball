@@ -16,16 +16,6 @@ public class ManagerGame : MonoBehaviour
         player.GetChild(PlayerPrefs.GetInt("chosenSkin")).gameObject.SetActive(true);
     }
 
-    //[SerializeField] public GameObject _panelGameOver;
-
-    /*private void FixedUpdate()
-    {
-        if (PlayerController.isPlayerDead == true)
-        {
-            _panelGameOver.SetActive(true);
-        }
-    }*/
-
     public void Restart()
     {
         SceneManager.LoadScene(0);
@@ -35,7 +25,6 @@ public class ManagerGame : MonoBehaviour
 
     public void ExitGameScene()
     {
-        Score._playerScore = 0;
         SceneManager.LoadScene(1);
         Time.timeScale = 1;
     }
