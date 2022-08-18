@@ -9,9 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4612819494767796277}
+  - component: {fileID: -2646814503747882936}
   m_Layer: 0
   m_Name: Cauldron
-  m_TagString: Untagged
+  m_TagString: obstacles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32,6 +33,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &-2646814503747882936
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4964585630265026652}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &1269596933575154236
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -107,6 +122,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 349c9c0a38c198f48b7d42032bb4d5ba, type: 3}
 --- !u!4 &1269596933575095094 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 469258, guid: 349c9c0a38c198f48b7d42032bb4d5ba, type: 3}
+  m_CorrespondingSourceObject: {fileID: 469258, guid: 349c9c0a38c198f48b7d42032bb4d5ba,
+    type: 3}
   m_PrefabInstance: {fileID: 1269596933575154236}
   m_PrefabAsset: {fileID: 0}

@@ -5,8 +5,13 @@ public class CoinCollector : MonoBehaviour
 {
     [SerializeField] private int coins;
     [SerializeField] private Text coinsText;
+    public AudioSource audioSource;
+    public AudioClip coinCon;
+    public int totalCoins;
+
     private void Start()
     {
+        totalCoins = 0;
         coins = PlayerPrefs.GetInt("coins");
         coinsText.text = coins.ToString();
     }
@@ -18,7 +23,9 @@ public class CoinCollector : MonoBehaviour
             coins++;
             PlayerPrefs.SetInt("coins", coins);
             coinsText.text = coins.ToString();
+            totalCoins++;
             Destroy(other.gameObject);
+            audioSource.PlayOneShot(coinCon);
         }
     }
 }

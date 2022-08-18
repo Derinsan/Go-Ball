@@ -1,8 +1,0 @@
-id;en;ru
-main_1;settings;настройки
-main_2;language;язык
-main_3;music;музыка
-main_4;yes;да
-main_5;no;нет
-main_6;pause;пауза
-main_7;continue;продолжить

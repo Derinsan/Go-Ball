@@ -9,7 +9,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1860231912341994, guid: 2ee521e701da6df4ca03612e705a7b74, type: 3}
       propertyPath: m_Name
-      value: WoodBox8
+      value: WoodBox8 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 1860231912341994, guid: 2ee521e701da6df4ca03612e705a7b74, type: 3}
+      propertyPath: m_TagString
+      value: obstacles
       objectReference: {fileID: 0}
     - target: {fileID: 4651360380059628, guid: 2ee521e701da6df4ca03612e705a7b74, type: 3}
       propertyPath: m_RootOrder
@@ -71,7 +75,8 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 2ee521e701da6df4ca03612e705a7b74, type: 3}
 --- !u!1 &2772707048019101620 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 1860231912341994, guid: 2ee521e701da6df4ca03612e705a7b74, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1860231912341994, guid: 2ee521e701da6df4ca03612e705a7b74,
+    type: 3}
   m_PrefabInstance: {fileID: 2773154693968512606}
   m_PrefabAsset: {fileID: 0}
 --- !u!65 &7865468555796668690

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 880148799919504060}
   m_Layer: 0
   m_Name: HurdleSecondPrefab
-  m_TagString: Untagged
+  m_TagString: obstacles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95,12 +95,14 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 2ac7f74c7d519ad44a819e9e78834688, type: 3}
 --- !u!4 &7794954399767498882 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 424106, guid: 2ac7f74c7d519ad44a819e9e78834688, type: 3}
+  m_CorrespondingSourceObject: {fileID: 424106, guid: 2ac7f74c7d519ad44a819e9e78834688,
+    type: 3}
   m_PrefabInstance: {fileID: 7794954399767652392}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &7794954399767661794 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 124106, guid: 2ac7f74c7d519ad44a819e9e78834688, type: 3}
+  m_CorrespondingSourceObject: {fileID: 124106, guid: 2ac7f74c7d519ad44a819e9e78834688,
+    type: 3}
   m_PrefabInstance: {fileID: 7794954399767652392}
   m_PrefabAsset: {fileID: 0}
 --- !u!64 &434602916926430728

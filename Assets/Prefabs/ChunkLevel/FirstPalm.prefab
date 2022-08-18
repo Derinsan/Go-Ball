@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 778425215699556715}
   m_Layer: 0
   m_Name: FirstPalm
-  m_TagString: Untagged
+  m_TagString: obstacles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107,12 +107,14 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 3517325933a4f02419b118e4ac715d2e, type: 3}
 --- !u!4 &1538174768051355830 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 446148, guid: 3517325933a4f02419b118e4ac715d2e, type: 3}
+  m_CorrespondingSourceObject: {fileID: 446148, guid: 3517325933a4f02419b118e4ac715d2e,
+    type: 3}
   m_PrefabInstance: {fileID: 1538174768051474034}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1538174768051614870 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 146148, guid: 3517325933a4f02419b118e4ac715d2e, type: 3}
+  m_CorrespondingSourceObject: {fileID: 146148, guid: 3517325933a4f02419b118e4ac715d2e,
+    type: 3}
   m_PrefabInstance: {fileID: 1538174768051474034}
   m_PrefabAsset: {fileID: 0}
 --- !u!64 &6723319113359740488

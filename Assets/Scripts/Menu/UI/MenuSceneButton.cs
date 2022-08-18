@@ -6,6 +6,8 @@ public class MenuSceneButton : MonoBehaviour
     [SerializeField] private GameObject _settingsButton;
     [SerializeField] private GameObject _settings;
 
+    [SerializeField] AudioSource audioSource;
+
     public void PlayButton()
     {
         SceneManager.LoadScene("LoadingScene");
@@ -26,6 +28,7 @@ public class MenuSceneButton : MonoBehaviour
     public void SettingsButton()
     {
         _settings.SetActive(true);
+        audioSource.Play();
     }
 
     public void SettingsExitButton()

@@ -8,12 +8,12 @@ PlayerSettings:
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
-  defaultScreenOrientation: 4
+  defaultScreenOrientation: 3
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
-  productName: First Game
+  companyName: Derinsan Games
+  productName: Go Ball
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -843,10 +843,14 @@ PlayerSettings:
     Build: 0
     Collab: 0
     ErrorHub: 0
+    Game Performance: 0
     Game_Performance: 0
     Hub: 0
+    Legacy Analytics: 0
     Purchasing: 0
+    UDP: 0
     UNet: 1
+    Unity Ads: 1
     Unity_Ads: 0
   luminIcon:
     m_Name: 
@@ -861,11 +865,11 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 0
-  cloudProjectId: 
+  cloudProjectId: 926497c2-7b29-435a-af44-3cb064a34ca2
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: EffectsExamples
-  organizationId: 
+  projectName: Go Ball
+  organizationId: firedragon71597
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 1
   playerDataPath: 

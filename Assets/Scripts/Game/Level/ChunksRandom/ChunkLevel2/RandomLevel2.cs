@@ -9,8 +9,8 @@ public class RandomLevel2 : MonoBehaviour
 
     private void Start()
     {
-        Vector3 position = _setSticks[Random.Range(0, _setSticks.Length)].position;
-        Instantiate(_sticks, position, Quaternion.identity);
+        Vector3 positionSticks = _setSticks[Random.Range(0, _setSticks.Length)].position;
+        Instantiate(_sticks, positionSticks, Quaternion.identity);
 
         Vector3 positionLPN = _setLPN[Random.Range(0, _setLPN.Length)].position;
         Instantiate(_LPN, positionLPN, Quaternion.identity);

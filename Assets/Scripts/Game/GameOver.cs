@@ -18,11 +18,26 @@ public class GameOver : MonoBehaviour
         {
             recordScore = lastRunScore;
             PlayerPrefs.SetInt("recordScore", recordScore);
-            recordText.text = recordScore.ToString();
+            PlayerPrefs.GetString("Language");
+            if (Localizator.language == "" || Localizator.language == "EN")
+            {
+                recordText.text = "Record: " + recordScore.ToString();
+            }
+            else if (Localizator.language == "RU")
+            {
+                recordText.text = "Рекорд: " + recordScore.ToString();
+            }
         }
         else
         {
-            recordText.text = recordScore.ToString();
+            if (Localizator.language == "" || Localizator.language == "EN")
+            {
+                recordText.text = "Record: " + recordScore.ToString();
+            }
+            else if (Localizator.language == "RU")
+            {
+                recordText.text = "Рекорд: " + recordScore.ToString();
+            }
         }
     }
 

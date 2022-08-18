@@ -3,27 +3,36 @@ using UnityEngine.Audio;
 
 public class SoundManager : MonoBehaviour
 {
-    [SerializeField] private AudioSource _audioSource;
-    private float musicVolume = 1f;
-    public AudioMixer audioMixer;
+    public AudioMixerGroup Mixer;
+    [SerializeField] AudioSource audioSource;
 
-    private void Start()
+    public void ToggleMusic(bool enabled)
     {
-        _audioSource = GetComponent<AudioSource>();
+        if (enabled)
+        {
+            Mixer.audioMixer.SetFloat("MusicVolume", 0);
+        }
+        else
+        {
+            Mixer.audioMixer.SetFloat("MusicVolume", -80);
+        }
+
+        PlayerPrefs.SetInt("MusicEnabled", enabled ? 1 : 0);
+        audioSource.Play();
     }
 
-    private void FixedUpdate()
+    public void ToggleEffects(bool enabled)
     {
-        _audioSource.volume = musicVolume;
-    }
+        if (enabled)
+        {
+            Mixer.audioMixer.SetFloat("EffectsVolume", 0);
+        }
+        else
+        {
+            Mixer.audioMixer.SetFloat("EffectsVolume", -80);
+        }
 
-    public void SetVolume(float vol)
-    {
-        musicVolume = vol;
-    }
-
-    public void SaveSettings()
-    {
-        audioMixer.SetFloat("MasterVolume", musicVolume);
+        PlayerPrefs.SetInt("EffectsEnabled", enabled ? 1 : 0);
+        audioSource.Play();
     }
 }

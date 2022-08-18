@@ -6,6 +6,7 @@ public class ManagerGame : MonoBehaviour
     private bool _isPause = false;
     [SerializeField] private GameObject _panelPause;
     public Transform player;
+    [SerializeField] private GameObject _coinSprite;
 
     private void Awake()
     {
@@ -51,8 +52,8 @@ public class ManagerGame : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
-    public void ContinueGameYes()
+    private void FixedUpdate()
     {
-
+        _coinSprite.transform.Rotate(new Vector3(0f, 120f, 0f) * Time.deltaTime);
     }
 }

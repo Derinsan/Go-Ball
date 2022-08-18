@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4955028659435020649}
   m_Layer: 0
   m_Name: Fence
-  m_TagString: Untagged
+  m_TagString: obstacles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39,55 +39,68 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4955028659435020649}
     m_Modifications:
-    - target: {fileID: 8796719281495795445, guid: e9315b28430474e47929b240b30a0ad7, type: 3}
+    - target: {fileID: 8796719281495795445, guid: e9315b28430474e47929b240b30a0ad7,
+        type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8796719281495795445, guid: e9315b28430474e47929b240b30a0ad7, type: 3}
+    - target: {fileID: 8796719281495795445, guid: e9315b28430474e47929b240b30a0ad7,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: -16.636509
       objectReference: {fileID: 0}
-    - target: {fileID: 8796719281495795445, guid: e9315b28430474e47929b240b30a0ad7, type: 3}
+    - target: {fileID: 8796719281495795445, guid: e9315b28430474e47929b240b30a0ad7,
+        type: 3}
       propertyPath: m_LocalPosition.y
       value: 9.510414
       objectReference: {fileID: 0}
-    - target: {fileID: 8796719281495795445, guid: e9315b28430474e47929b240b30a0ad7, type: 3}
+    - target: {fileID: 8796719281495795445, guid: e9315b28430474e47929b240b30a0ad7,
+        type: 3}
       propertyPath: m_LocalPosition.z
       value: -20.302673
       objectReference: {fileID: 0}
-    - target: {fileID: 8796719281495795445, guid: e9315b28430474e47929b240b30a0ad7, type: 3}
+    - target: {fileID: 8796719281495795445, guid: e9315b28430474e47929b240b30a0ad7,
+        type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.0000000754979
       objectReference: {fileID: 0}
-    - target: {fileID: 8796719281495795445, guid: e9315b28430474e47929b240b30a0ad7, type: 3}
+    - target: {fileID: 8796719281495795445, guid: e9315b28430474e47929b240b30a0ad7,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: 1.7112914e-15
       objectReference: {fileID: 0}
-    - target: {fileID: 8796719281495795445, guid: e9315b28430474e47929b240b30a0ad7, type: 3}
+    - target: {fileID: 8796719281495795445, guid: e9315b28430474e47929b240b30a0ad7,
+        type: 3}
       propertyPath: m_LocalRotation.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8796719281495795445, guid: e9315b28430474e47929b240b30a0ad7, type: 3}
+    - target: {fileID: 8796719281495795445, guid: e9315b28430474e47929b240b30a0ad7,
+        type: 3}
       propertyPath: m_LocalRotation.z
       value: -0.000000021855694
       objectReference: {fileID: 0}
-    - target: {fileID: 8796719281495795445, guid: e9315b28430474e47929b240b30a0ad7, type: 3}
+    - target: {fileID: 8796719281495795445, guid: e9315b28430474e47929b240b30a0ad7,
+        type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8796719281495795445, guid: e9315b28430474e47929b240b30a0ad7, type: 3}
+    - target: {fileID: 8796719281495795445, guid: e9315b28430474e47929b240b30a0ad7,
+        type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8796719281495795445, guid: e9315b28430474e47929b240b30a0ad7, type: 3}
+    - target: {fileID: 8796719281495795445, guid: e9315b28430474e47929b240b30a0ad7,
+        type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8796719281496029717, guid: e9315b28430474e47929b240b30a0ad7, type: 3}
+    - target: {fileID: 8796719281496029717, guid: e9315b28430474e47929b240b30a0ad7,
+        type: 3}
       propertyPath: m_Name
       value: Fence 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8796719281496029717, guid: e9315b28430474e47929b240b30a0ad7, type: 3}
+    - target: {fileID: 8796719281496029717, guid: e9315b28430474e47929b240b30a0ad7,
+        type: 3}
       propertyPath: m_TagString
       value: obstacles
       objectReference: {fileID: 0}
@@ -95,6 +108,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: e9315b28430474e47929b240b30a0ad7, type: 3}
 --- !u!4 &8245016687333087713 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 8796719281495795445, guid: e9315b28430474e47929b240b30a0ad7, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8796719281495795445, guid: e9315b28430474e47929b240b30a0ad7,
+    type: 3}
   m_PrefabInstance: {fileID: 610263495250476820}
   m_PrefabAsset: {fileID: 0}

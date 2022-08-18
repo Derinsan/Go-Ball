@@ -172,6 +172,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3949618021091473931, guid: 74306c807f3830a4a8f1c245e9549c6c,
+        type: 3}
+      propertyPath: m_TagString
+      value: obstacles
+      objectReference: {fileID: 0}
     - target: {fileID: 3949618021091567147, guid: 74306c807f3830a4a8f1c245e9549c6c,
         type: 3}
       propertyPath: m_RootOrder
@@ -285,52 +290,52 @@ PrefabInstance:
     - target: {fileID: 4271122451611340037, guid: 251ce8703413b4a4eb50b361975cd549,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.2876
+      value: 0.03760001
       objectReference: {fileID: 0}
     - target: {fileID: 4271122451611340037, guid: 251ce8703413b4a4eb50b361975cd549,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.4372
+      value: -3.7130456
       objectReference: {fileID: 0}
     - target: {fileID: 4271122451611340037, guid: 251ce8703413b4a4eb50b361975cd549,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -14.3077
+      value: -10.889481
       objectReference: {fileID: 0}
     - target: {fileID: 4271122451611340037, guid: 251ce8703413b4a4eb50b361975cd549,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9992787
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4271122451611340037, guid: 251ce8703413b4a4eb50b361975cd549,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.03706395
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4271122451611340037, guid: 251ce8703413b4a4eb50b361975cd549,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.00552181
+      value: 0.975894
       objectReference: {fileID: 0}
     - target: {fileID: 4271122451611340037, guid: 251ce8703413b4a4eb50b361975cd549,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.006154453
+      value: -0.21824537
       objectReference: {fileID: 0}
     - target: {fileID: 4271122451611340037, guid: 251ce8703413b4a4eb50b361975cd549,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -4.244
+      value: 25.212
       objectReference: {fileID: 0}
     - target: {fileID: 4271122451611340037, guid: 251ce8703413b4a4eb50b361975cd549,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -0.66
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 4271122451611340037, guid: 251ce8703413b4a4eb50b361975cd549,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0.73
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 251ce8703413b4a4eb50b361975cd549, type: 3}
@@ -526,6 +531,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wave
       objectReference: {fileID: 0}
+    - target: {fileID: 149962, guid: 58c25a420e6882147886b21744a277c7, type: 3}
+      propertyPath: m_TagString
+      value: obstacles
+      objectReference: {fileID: 0}
     - target: {fileID: 449962, guid: 58c25a420e6882147886b21744a277c7, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -580,6 +589,26 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 447272d5916c0734a876cfbe785794c3, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58c25a420e6882147886b21744a277c7, type: 3}
+--- !u!1 &5622752567235787636 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 149962, guid: 58c25a420e6882147886b21744a277c7,
+    type: 3}
+  m_PrefabInstance: {fileID: 5622752567235932862}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1363948344743479859
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5622752567235787636}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 3279ffff6a1ad3d4c8fdb040401e0f30, type: 3}
 --- !u!4 &5622752567236079380 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 449962, guid: 58c25a420e6882147886b21744a277c7,
@@ -1503,6 +1532,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 800616031680425498, guid: cc9f980ee3a12ab49af49ee894ebd89a,
+        type: 3}
+      propertyPath: m_TagString
+      value: obstacles
       objectReference: {fileID: 0}
     - target: {fileID: 800616031680524858, guid: cc9f980ee3a12ab49af49ee894ebd89a,
         type: 3}

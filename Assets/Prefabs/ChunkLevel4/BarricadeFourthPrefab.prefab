@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3110066583326846222}
   m_Layer: 0
   m_Name: BarricadeFourthPrefab
-  m_TagString: Untagged
+  m_TagString: obstacles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107,7 +107,8 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 8a789ab84aefa6f419cd26c76a8ba094, type: 3}
 --- !u!1 &6186623661584229925 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 101576, guid: 8a789ab84aefa6f419cd26c76a8ba094, type: 3}
+  m_CorrespondingSourceObject: {fileID: 101576, guid: 8a789ab84aefa6f419cd26c76a8ba094,
+    type: 3}
   m_PrefabInstance: {fileID: 6186623661584198381}
   m_PrefabAsset: {fileID: 0}
 --- !u!65 &4431489379486628330
@@ -125,6 +126,7 @@ BoxCollider:
   m_Center: {x: -0.00019276142, y: 0.0647968, z: 0.0036566183}
 --- !u!4 &6186623661584572587 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 444998, guid: 8a789ab84aefa6f419cd26c76a8ba094, type: 3}
+  m_CorrespondingSourceObject: {fileID: 444998, guid: 8a789ab84aefa6f419cd26c76a8ba094,
+    type: 3}
   m_PrefabInstance: {fileID: 6186623661584198381}
   m_PrefabAsset: {fileID: 0}

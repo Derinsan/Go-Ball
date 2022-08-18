@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class SkinChanger : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class SkinChanger : MonoBehaviour
     public int index;
 
     public int coins;
+    [SerializeField] AudioSource _buySound;
+    [SerializeField] AudioSource _scrollSound;
 
     private void Awake()
     {
@@ -39,7 +42,14 @@ public class SkinChanger : MonoBehaviour
                 player.GetChild(i).gameObject.SetActive(false);
         }
 
-        priceText.text = "CHOSEN";
+        if (Localizator.language == "" || Localizator.language == "EN")
+        {
+            priceText.text = "CHOSEN";
+        }
+        else if (Localizator.language == "RU")
+        {
+            priceText.text = "Выбрано";
+        }
         buyBttn.interactable = false;
     }
 
@@ -50,13 +60,20 @@ public class SkinChanger : MonoBehaviour
 
     public void ScrollRight()
     {
-        if (index < player.childCount)
+        if (index < player.childCount - 1)
         {
             index++;
 
             if (info[index].inStock && info[index].isChosen)
             {
-                priceText.text = "CHOSEN";
+                if (Localizator.language == "" || Localizator.language == "EN")
+                {
+                    priceText.text = "CHOSEN";
+                }
+                else if (Localizator.language == "RU")
+                {
+                    priceText.text = "Выбрано";
+                }
                 buyBttn.interactable = false;
             }
             else if (!info[index].inStock)
@@ -66,7 +83,14 @@ public class SkinChanger : MonoBehaviour
             }
             else if (info[index].inStock && !info[index].isChosen)
             {
-                priceText.text = "CHOOSE";
+                if (Localizator.language == "" || Localizator.language == "EN")
+                {
+                    priceText.text = "CHOOSE";
+                }
+                else if (Localizator.language == "RU")
+                {
+                    priceText.text = "Выбрать";
+                }
                 buyBttn.interactable = true;
             }
 
@@ -75,6 +99,8 @@ public class SkinChanger : MonoBehaviour
             // Можно записать так: player.GetChild(index-1).gameObject.SetActive(false);
 
             player.GetChild(index).gameObject.SetActive(true);
+
+            _scrollSound.Play();
         }
     }
 
@@ -86,7 +112,14 @@ public class SkinChanger : MonoBehaviour
 
             if (info[index].inStock && info[index].isChosen)
             {
-                priceText.text = "CHOSEN";
+                if (Localizator.language == "" || Localizator.language == "EN")
+                {
+                    priceText.text = "CHOSEN";
+                }
+                else if (Localizator.language == "RU")
+                {
+                    priceText.text = "Выбрано";
+                }
                 buyBttn.interactable = false;
             }
             else if (!info[index].inStock)
@@ -96,7 +129,14 @@ public class SkinChanger : MonoBehaviour
             }
             else if (info[index].inStock && !info[index].isChosen)
             {
-                priceText.text = "CHOOSE";
+                if (Localizator.language == "" || Localizator.language == "EN")
+                {
+                    priceText.text = "CHOOSE";
+                }
+                else if (Localizator.language == "RU")
+                {
+                    priceText.text = "Выбрать";
+                }
                 buyBttn.interactable = true;
             }
 
@@ -104,6 +144,8 @@ public class SkinChanger : MonoBehaviour
                 player.GetChild(i).gameObject.SetActive(false);
 
             player.GetChild(index).gameObject.SetActive(true);
+
+            _scrollSound.Play();
         }
     }
 
@@ -118,7 +160,15 @@ public class SkinChanger : MonoBehaviour
                 PlayerPrefs.SetInt("coins", coins);
                 StockCheck[index] = true;
                 info[index].inStock = true;
-                priceText.text = "CHOOSE";
+                _buySound.Play();
+                if (Localizator.language == "" || Localizator.language == "EN")
+                {
+                    priceText.text = "CHOOSE";
+                }
+                else if (Localizator.language == "RU")
+                {
+                    priceText.text = "Выбрать";
+                }
                 Save();
             }
         }
@@ -127,7 +177,14 @@ public class SkinChanger : MonoBehaviour
         {
             PlayerPrefs.SetInt("chosenSkin", index);
             buyBttn.interactable = false;
-            priceText.text = "CHOSEN";
+            if (Localizator.language == "" || Localizator.language == "EN")
+            {
+                priceText.text = "CHOSEN";
+            }
+            else if (Localizator.language == "RU")
+            {
+                priceText.text = "Выбрано";
+            }
         }
     }
 

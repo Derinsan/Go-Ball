@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5668270128333416831}
   m_Layer: 0
   m_Name: PalmPrefab
-  m_TagString: Untagged
+  m_TagString: obstacles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107,7 +107,8 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 3517325933a4f02419b118e4ac715d2e, type: 3}
 --- !u!1 &7038054334791172072 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 146148, guid: 3517325933a4f02419b118e4ac715d2e, type: 3}
+  m_CorrespondingSourceObject: {fileID: 146148, guid: 3517325933a4f02419b118e4ac715d2e,
+    type: 3}
   m_PrefabInstance: {fileID: 7038054334791288076}
   m_PrefabAsset: {fileID: 0}
 --- !u!64 &5284856648551076878
@@ -126,6 +127,7 @@ MeshCollider:
   m_Mesh: {fileID: 4300000, guid: b90ff7e3d8926e44b8c08f957d58ecd0, type: 3}
 --- !u!4 &7038054334791470024 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 446148, guid: 3517325933a4f02419b118e4ac715d2e, type: 3}
+  m_CorrespondingSourceObject: {fileID: 446148, guid: 3517325933a4f02419b118e4ac715d2e,
+    type: 3}
   m_PrefabInstance: {fileID: 7038054334791288076}
   m_PrefabAsset: {fileID: 0}

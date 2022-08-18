@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6758392223847516959}
   m_Layer: 0
   m_Name: HurdleFirst
-  m_TagString: Untagged
+  m_TagString: obstacles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,7 +111,8 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 532ee50e20554ae4d8287b34e4c6bcb6, type: 3}
 --- !u!1 &5378324427837071026 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 111844, guid: 532ee50e20554ae4d8287b34e4c6bcb6, type: 3}
+  m_CorrespondingSourceObject: {fileID: 111844, guid: 532ee50e20554ae4d8287b34e4c6bcb6,
+    type: 3}
   m_PrefabInstance: {fileID: 5378324427837106774}
   m_PrefabAsset: {fileID: 0}
 --- !u!64 &5214110319706148826
@@ -130,6 +131,7 @@ MeshCollider:
   m_Mesh: {fileID: 4300000, guid: 400ca6311d5459244a1af9dea192449c, type: 3}
 --- !u!4 &5378324427837481618 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 411844, guid: 532ee50e20554ae4d8287b34e4c6bcb6, type: 3}
+  m_CorrespondingSourceObject: {fileID: 411844, guid: 532ee50e20554ae4d8287b34e4c6bcb6,
+    type: 3}
   m_PrefabInstance: {fileID: 5378324427837106774}
   m_PrefabAsset: {fileID: 0}

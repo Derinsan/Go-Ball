@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3475217183593291509}
   m_Layer: 0
   m_Name: LPN
-  m_TagString: Untagged
+  m_TagString: obstacles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -403,7 +403,8 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: af481adc0b8d84d06835fe939d22b748, type: 3}
 --- !u!1 &8012292437194118903 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 1000011788660926, guid: af481adc0b8d84d06835fe939d22b748, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1000011788660926, guid: af481adc0b8d84d06835fe939d22b748,
+    type: 3}
   m_PrefabInstance: {fileID: 8012726189656254025}
   m_PrefabAsset: {fileID: 0}
 --- !u!64 &3431632596899873294
@@ -422,6 +423,7 @@ MeshCollider:
   m_Mesh: {fileID: 4300016, guid: 12d2ed6417ce14085ac856a645edee45, type: 3}
 --- !u!4 &8015521103241918137 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 4000012976492784, guid: af481adc0b8d84d06835fe939d22b748, type: 3}
+  m_CorrespondingSourceObject: {fileID: 4000012976492784, guid: af481adc0b8d84d06835fe939d22b748,
+    type: 3}
   m_PrefabInstance: {fileID: 8012726189656254025}
   m_PrefabAsset: {fileID: 0}

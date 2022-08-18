@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 521035163235426251}
   m_Layer: 0
   m_Name: BarricadeThirdPrefab
-  m_TagString: Untagged
+  m_TagString: obstacles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95,12 +95,14 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 5a5cfd070a5d6b749853b23e2ba6d043, type: 3}
 --- !u!4 &2476097885153885537 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 403540, guid: 5a5cfd070a5d6b749853b23e2ba6d043, type: 3}
+  m_CorrespondingSourceObject: {fileID: 403540, guid: 5a5cfd070a5d6b749853b23e2ba6d043,
+    type: 3}
   m_PrefabInstance: {fileID: 2476097885154268469}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2476097885154180501 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 174240, guid: 5a5cfd070a5d6b749853b23e2ba6d043, type: 3}
+  m_CorrespondingSourceObject: {fileID: 174240, guid: 5a5cfd070a5d6b749853b23e2ba6d043,
+    type: 3}
   m_PrefabInstance: {fileID: 2476097885154268469}
   m_PrefabAsset: {fileID: 0}
 --- !u!64 &5761444371472322124
