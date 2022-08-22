@@ -19,14 +19,14 @@ public class ManagerGame : MonoBehaviour
 
     public void Restart()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("GameScene");
         Time.timeScale = 1;
         Score._playerScore = 0;
     }
 
     public void ExitGameScene()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("MenuScene");
         Time.timeScale = 1;
     }
 
@@ -47,9 +47,9 @@ public class ManagerGame : MonoBehaviour
         SwitchPauseStatus(_isPause);
     }
 
-    public void ContinueGameNo()
+    public void ContinueGame()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("MenuScene");
     }
 
     private void FixedUpdate()

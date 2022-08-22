@@ -3,10 +3,18 @@ using UnityEngine.SceneManagement;
 
 public class MenuSceneButton : MonoBehaviour
 {
+    public static MenuSceneButton S;
     [SerializeField] private GameObject _settingsButton;
     [SerializeField] private GameObject _settings;
 
     [SerializeField] AudioSource audioSource;
+
+    private void Awake()
+    {
+        S = this;
+        InterstilialAd.S.LoadAd();
+        RewardedAds.S.LoadAd();
+    }
 
     public void PlayButton()
     {
@@ -15,11 +23,11 @@ public class MenuSceneButton : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (_settings.activeSelf == false)
+        if (_settings.activeInHierarchy == false)
         {
-            _settingsButton.transform.Rotate(new Vector3(0, 0, 50) * Time.deltaTime);
+            _settingsButton.transform.Rotate(new Vector3(0, 0, 50f) * Time.deltaTime);
         }
-        else if (_settings.activeSelf == true)
+        else if (_settings.activeInHierarchy == true)
         {
             _settingsButton.transform.Rotate(new Vector3(0f, 0f, -50f) * Time.deltaTime);
         }
