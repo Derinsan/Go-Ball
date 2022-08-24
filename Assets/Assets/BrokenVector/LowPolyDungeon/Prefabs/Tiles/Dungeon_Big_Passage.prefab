@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 8011076794458981704}
   - component: {fileID: 8011076794460276072}
   - component: {fileID: 8011076794461407144}
-  - component: {fileID: 8011076794465515464}
+  - component: {fileID: 1877682733253549737}
+  - component: {fileID: 1726712065332818789}
   m_Layer: 0
   m_Name: Dungeon_Big_Passage
   m_TagString: Untagged
@@ -84,8 +85,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8011076794465515464
-MeshCollider:
+--- !u!65 &1877682733253549737
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94,7 +95,19 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -5028187238696948556, guid: 9534b9817d800ec4cbb6e3c27b4e39de, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 3.3251622, y: 5.18272, z: 0.60110295}
+  m_Center: {x: -2.3374176, y: 2.3913598, z: -0.000000059604645}
+--- !u!65 &1726712065332818789
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8011076794459216232}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.338692, y: 5.18272, z: 0.60110295}
+  m_Center: {x: 2.3306527, y: 2.3913598, z: -0.000000059604645}
