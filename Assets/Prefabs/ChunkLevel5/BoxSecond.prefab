@@ -119,6 +119,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: obstacles
       objectReference: {fileID: 0}
+    - target: {fileID: 9199318076177868339, guid: e37d55d9adae8724c9dcf1dff5b67578,
+        type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9199318076177868339, guid: e37d55d9adae8724c9dcf1dff5b67578,
+        type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9152009896336452313, guid: e37d55d9adae8724c9dcf1dff5b67578, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e37d55d9adae8724c9dcf1dff5b67578, type: 3}
@@ -154,6 +164,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4527528719922224403}
     m_Modifications:
+    - target: {fileID: 842063078337954867, guid: 34534f9a2d6df1c4f8dee201f8d50aaa,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1114773739493970588, guid: 34534f9a2d6df1c4f8dee201f8d50aaa,
         type: 3}
       propertyPath: m_Lightmapping
@@ -197,12 +212,27 @@ PrefabInstance:
     - target: {fileID: 2992976193325264541, guid: 34534f9a2d6df1c4f8dee201f8d50aaa,
         type: 3}
       propertyPath: m_Shadows.m_Resolution
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6361864610118385978, guid: 34534f9a2d6df1c4f8dee201f8d50aaa,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920422107852270412, guid: 34534f9a2d6df1c4f8dee201f8d50aaa,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8266949716707160795, guid: 34534f9a2d6df1c4f8dee201f8d50aaa,
         type: 3}
       propertyPath: m_Name
       value: Candlestick_Triple
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266949716707160795, guid: 34534f9a2d6df1c4f8dee201f8d50aaa,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8266949716707585787, guid: 34534f9a2d6df1c4f8dee201f8d50aaa,
         type: 3}
@@ -272,6 +302,11 @@ PrefabInstance:
     - target: {fileID: 8266949716707585787, guid: 34534f9a2d6df1c4f8dee201f8d50aaa,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266949716709354523, guid: 34534f9a2d6df1c4f8dee201f8d50aaa,
+        type: 3}
+      propertyPath: m_ReflectionProbeUsage
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:

@@ -119,6 +119,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: obstacles
       objectReference: {fileID: 0}
+    - target: {fileID: 9199318076177868339, guid: e37d55d9adae8724c9dcf1dff5b67578,
+        type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9199318076177868339, guid: e37d55d9adae8724c9dcf1dff5b67578,
+        type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9152009896336452313, guid: e37d55d9adae8724c9dcf1dff5b67578, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e37d55d9adae8724c9dcf1dff5b67578, type: 3}

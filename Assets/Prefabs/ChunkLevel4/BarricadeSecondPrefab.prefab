@@ -103,6 +103,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2365260, guid: 77357476f4b45b74caadcc3477a9f895, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2365260, guid: 77357476f4b45b74caadcc3477a9f895, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77357476f4b45b74caadcc3477a9f895, type: 3}
 --- !u!1 &220273533414564721 stripped
@@ -111,7 +119,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 220273533414715067}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &2867970634828710128
+--- !u!64 &7823560683336481410
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

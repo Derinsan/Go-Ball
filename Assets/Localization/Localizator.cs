@@ -21,10 +21,12 @@ public class Localizator : MonoBehaviour
         if (language == "" || language == "EN")
         {
             text.text = textEN;
+            text.fontStyle = FontStyle.Normal;
         }
         else if (language == "RU")
         {
             text.text = textRU;
+            text.fontStyle = FontStyle.Bold;
         }
     }
 }

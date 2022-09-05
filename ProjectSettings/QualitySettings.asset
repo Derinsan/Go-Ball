@@ -224,7 +224,7 @@ QualitySettings:
     excludedTargetPlatforms: []
   - serializedVersion: 2
     name: Medium
-    pixelLightCount: 2
+    pixelLightCount: 4
     shadows: 2
     shadowResolution: 1
     shadowProjection: 1
@@ -234,7 +234,7 @@ QualitySettings:
     shadowCascade2Split: 0.33333334
     shadowCascade4Split: {x: 0.06666667, y: 0.19999999, z: 0.46666664}
     shadowmaskMode: 1
-    skinWeights: 2
+    skinWeights: 1
     textureQuality: 0
     anisotropicTextures: 1
     antiAliasing: 0

@@ -16,7 +16,7 @@ public class CoinCollector : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Coin")
+        if (other.gameObject.CompareTag("Coin"))
         {
             coins++;
             PlayerPrefs.SetInt("coins", coins);

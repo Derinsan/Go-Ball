@@ -27,7 +27,7 @@ public class MenuSceneButton : MonoBehaviour
         {
             _settingsButton.transform.Rotate(new Vector3(0, 0, 50f) * Time.deltaTime);
         }
-        else if (_settings.activeInHierarchy == true)
+        if (_settings.activeInHierarchy == true)
         {
             _settingsButton.transform.Rotate(new Vector3(0f, 0f, -50f) * Time.deltaTime);
         }
@@ -47,5 +47,10 @@ public class MenuSceneButton : MonoBehaviour
     public void ShopButton()
     {
         SceneManager.LoadScene("ShopScene");
+    }
+
+    public void AchievementsButton()
+    {
+        SceneManager.LoadScene("AchievementsScene");
     }
 }

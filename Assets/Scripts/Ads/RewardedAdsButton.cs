@@ -9,7 +9,7 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
 
     [SerializeField] private string _androidAdUnitId = "Rewarded_Android";
     [SerializeField] private string _iOSAdUnitId = "Rewarded_iOS";
-    private int coins;
+    //private int coins;
 
     private string _adUnitId;
 
@@ -22,7 +22,7 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
 
         //Disable button until ad is ready to show
         _showAdButton.interactable = false;
-        coins = PlayerPrefs.GetInt("coins");
+        //coins = PlayerPrefs.GetInt("coins");
     }
 
     private void Start()
@@ -75,8 +75,8 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
         {
             Debug.Log("Unity Ads Rewarded Ad Completed");
             // Grant a reward.
-            coins += 10;
-            PlayerPrefs.SetInt("coins", coins);
+            /*coins += 10;
+            PlayerPrefs.SetInt("coins", coins);*/
 
             // Load another ad:
             Advertisement.Load(_adUnitId, this);

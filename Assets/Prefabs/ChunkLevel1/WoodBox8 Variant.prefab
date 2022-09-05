@@ -71,6 +71,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 23563136969111730, guid: 2ee521e701da6df4ca03612e705a7b74,
+        type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23563136969111730, guid: 2ee521e701da6df4ca03612e705a7b74,
+        type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23563136969111730, guid: 2ee521e701da6df4ca03612e705a7b74,
+        type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ee521e701da6df4ca03612e705a7b74, type: 3}
 --- !u!1 &2772707048019101620 stripped

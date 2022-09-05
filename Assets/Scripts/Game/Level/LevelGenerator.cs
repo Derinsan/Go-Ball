@@ -6,7 +6,7 @@ public class LevelGenerator : MonoBehaviour
     [SerializeField] private GameObject[] _roadPrefab;
     private List<GameObject> _activeTiles = new List<GameObject>();
     private float _spawnPos = 115;
-    private float _tileLength = 110f;
+    private float _tileLength = 111f;
 
     [SerializeField] private Transform _player;
     private int _startTiles = 2;
@@ -21,7 +21,7 @@ public class LevelGenerator : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (_player != null)
+        if (PlayerController.isPlayerDead == false)
         {
             if (_player.position.z - 20 > _spawnPos - (_startTiles * _tileLength))
             {
@@ -29,11 +29,6 @@ public class LevelGenerator : MonoBehaviour
                 DeleteTile();
             }
         }
-        /*if (_player.position.z - 20 > _spawnPos - (_startTiles * _tileLength))
-        {
-            SpawnLevel(Random.Range(0, _roadPrefab.Length));
-            DeleteTile();
-        }*/
     }
 
     private void SpawnLevel(int tileindex)

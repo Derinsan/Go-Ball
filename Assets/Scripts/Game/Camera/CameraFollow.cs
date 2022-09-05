@@ -12,7 +12,7 @@ public class CameraFollow : MonoBehaviour
 
     private void Update()
     {
-        if (_player != null)
+        if (PlayerController.isPlayerDead == false)
         {
             transform.position = _player.transform.position + _offset;
         }

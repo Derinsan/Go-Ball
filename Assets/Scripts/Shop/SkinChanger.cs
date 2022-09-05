@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using UnityEngine.Audio;
 
 public class SkinChanger : MonoBehaviour
 {
@@ -42,14 +41,7 @@ public class SkinChanger : MonoBehaviour
                 player.GetChild(i).gameObject.SetActive(false);
         }
 
-        if (Localizator.language == "" || Localizator.language == "EN")
-        {
-            priceText.text = "CHOSEN";
-        }
-        else if (Localizator.language == "RU")
-        {
-            priceText.text = "Выбрано";
-        }
+        LanguageCheck();
         buyBttn.interactable = false;
     }
 
@@ -66,14 +58,7 @@ public class SkinChanger : MonoBehaviour
 
             if (info[index].inStock && info[index].isChosen)
             {
-                if (Localizator.language == "" || Localizator.language == "EN")
-                {
-                    priceText.text = "CHOSEN";
-                }
-                else if (Localizator.language == "RU")
-                {
-                    priceText.text = "Выбрано";
-                }
+                LanguageCheck();
                 buyBttn.interactable = false;
             }
             else if (!info[index].inStock)
@@ -83,14 +68,7 @@ public class SkinChanger : MonoBehaviour
             }
             else if (info[index].inStock && !info[index].isChosen)
             {
-                if (Localizator.language == "" || Localizator.language == "EN")
-                {
-                    priceText.text = "CHOOSE";
-                }
-                else if (Localizator.language == "RU")
-                {
-                    priceText.text = "Выбрать";
-                }
+                LanguageBuy();
                 buyBttn.interactable = true;
             }
 
@@ -112,14 +90,7 @@ public class SkinChanger : MonoBehaviour
 
             if (info[index].inStock && info[index].isChosen)
             {
-                if (Localizator.language == "" || Localizator.language == "EN")
-                {
-                    priceText.text = "CHOSEN";
-                }
-                else if (Localizator.language == "RU")
-                {
-                    priceText.text = "Выбрано";
-                }
+                LanguageCheck();
                 buyBttn.interactable = false;
             }
             else if (!info[index].inStock)
@@ -129,14 +100,7 @@ public class SkinChanger : MonoBehaviour
             }
             else if (info[index].inStock && !info[index].isChosen)
             {
-                if (Localizator.language == "" || Localizator.language == "EN")
-                {
-                    priceText.text = "CHOOSE";
-                }
-                else if (Localizator.language == "RU")
-                {
-                    priceText.text = "Выбрать";
-                }
+                LanguageBuy();
                 buyBttn.interactable = true;
             }
 
@@ -161,14 +125,7 @@ public class SkinChanger : MonoBehaviour
                 StockCheck[index] = true;
                 info[index].inStock = true;
                 _buySound.Play();
-                if (Localizator.language == "" || Localizator.language == "EN")
-                {
-                    priceText.text = "CHOOSE";
-                }
-                else if (Localizator.language == "RU")
-                {
-                    priceText.text = "Выбрать";
-                }
+                LanguageBuy();
                 Save();
             }
         }
@@ -177,20 +134,41 @@ public class SkinChanger : MonoBehaviour
         {
             PlayerPrefs.SetInt("chosenSkin", index);
             buyBttn.interactable = false;
-            if (Localizator.language == "" || Localizator.language == "EN")
-            {
-                priceText.text = "CHOSEN";
-            }
-            else if (Localizator.language == "RU")
-            {
-                priceText.text = "Выбрано";
-            }
+            LanguageCheck();
         }
     }
 
     public void ShopExit()
     {
         SceneManager.LoadScene("MenuScene");
+    }
+
+    public void LanguageCheck()
+    {
+        if (Localizator.language == "" || Localizator.language == "EN")
+        {
+            priceText.text = "CHOSEN";
+            priceText.fontStyle = FontStyle.Normal;
+        }
+        else if (Localizator.language == "RU")
+        {
+            priceText.text = "Выбрано";
+            priceText.fontStyle = FontStyle.Bold;
+        }
+    }
+
+    public void LanguageBuy()
+    {
+        if (Localizator.language == "" || Localizator.language == "EN")
+        {
+            priceText.text = "CHOOSE";
+            priceText.fontStyle = FontStyle.Normal;
+        }
+        else if (Localizator.language == "RU")
+        {
+            priceText.text = "Выбрать";
+            priceText.fontStyle = FontStyle.Bold;
+        }
     }
 }
 
